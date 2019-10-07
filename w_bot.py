@@ -1,9 +1,7 @@
 import telebot
 import pyowm
 from telebot.types import Message
-from telebot import apihelper
 
-apihelper.proxy = {'https':'https://177.5.244.76:3128'}
 
 omw = pyowm.OWM('7c0bb0c14f5da7b74d25f7668ef00176', language="ru")
 bot = telebot.TeleBot('447794786:AAHLQdR5Qo-T3XLtgFVUllhhoJsN0n_yM7Q')
@@ -11,7 +9,7 @@ bot = telebot.TeleBot('447794786:AAHLQdR5Qo-T3XLtgFVUllhhoJsN0n_yM7Q')
 
 @bot.message_handler(commands=["start"])
 def handle_start(message: Message):
-    bot.send_message(message.chat.id, 'Привет! \nНапиши название любого города России, чтобы узнать там погоду :)')
+    bot.send_message(message.chat.id, 'Привет! \nНапиши название города: если России, то кириллицей, для остальных: латиницей :)')
 
 
 @bot.message_handler(commands=["help"])
