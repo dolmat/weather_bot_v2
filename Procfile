@@ -1,1 +1,1 @@
-app: w_bot.py
+app: python w_bot.py
