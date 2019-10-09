@@ -1,1 +1,1 @@
-web: python w_bot.py
+app: w_bot.py
