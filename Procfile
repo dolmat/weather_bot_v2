@@ -1,1 +1,1 @@
-worker: w_bot.py
+web: gunicorn run_server:server
