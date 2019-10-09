@@ -9,12 +9,12 @@ bot = telebot.TeleBot('447794786:AAHLQdR5Qo-T3XLtgFVUllhhoJsN0n_yM7Q')
 
 @bot.message_handler(commands=["start"])
 def handle_start(message: Message):
-    bot.send_message(message.chat.id, 'Привет! \nНапиши название города: если России, то кириллицей, для остальных: латиницей :)')
+    bot.send_message(message.chat.id, 'Привет! \nНапиши название города: если России, то кириллицей, для остальных стран: латиницей :)')
 
 
 @bot.message_handler(commands=["help"])
 def handle_start(message: Message):
-    bot.send_message(message.chat.id, 'Андрей - лох')
+    bot.send_message(message.chat.id, 'Я могу рассказать, какая сейчас погода в городе. Для этого нужно написать, к примеру: \"Москва\" или \"Madrid\"')
 
 
 @bot.message_handler(content_types=['text'])
