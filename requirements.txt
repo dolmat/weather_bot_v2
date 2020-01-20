@@ -7,3 +7,4 @@ pyTelegramBotAPI
 pyowm
 flask
 gunicorn
+bot_handlers
