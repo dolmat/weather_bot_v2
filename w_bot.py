@@ -1,10 +1,11 @@
 import telebot
 import pyowm
+from config import TOKEN
 from telebot.types import Message
 
 
 omw = pyowm.OWM('7c0bb0c14f5da7b74d25f7668ef00176', language="ru")
-bot = telebot.TeleBot('447794786:AAHLQdR5Qo-T3XLtgFVUllhhoJsN0n_yM7Q')
+bot = telebot.TeleBot(TOKEN)
 
 
 @bot.message_handler(commands=["start"])
