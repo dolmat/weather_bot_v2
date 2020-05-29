@@ -12,7 +12,7 @@ def get_message():
         flask.request.stream.read().decode("utf-8"))])
     return "!", 200
 
-
+123
 @server.route('/', methods=["GET"])
 def index():
     bot.remove_webhook()
